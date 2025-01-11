@@ -24,10 +24,10 @@ ajouteparagraph.addEventListener('click', () =>{
 
 //  supprimer un nouvel element dans le dom
 let conteneur_2 = document.getElementById("conteneur_2")
-let delateparagraph = document.getElementById("delateparagraph");
+let btnDelete = document.getElementById("delateparagraph");
 
-delateparagraph.addEventListener('click', () =>{
-    conteneur_2.remove()
+btnDelete.addEventListener('click', () =>{
+    conteneur_2.removeChild(conteneur_2.firstChild);
         
 });
 
